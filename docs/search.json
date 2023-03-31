@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "paintings.html",
+    "href": "paintings.html",
+    "title": "Activity: Paintings catalogue in Jupyter Notebook",
+    "section": "",
+    "text": "Objective: Make a selection of nine paintings for the exhibition catalogue to be selected from Wikidata and rendered multi-format in Quarto.\nThe below Python code uses SPARQLWrapper to retrieve data from Wikidata based on a SPARQL query.\nWikidata link: http://www.wikidata.org/entity/Q25569472\nTitle: Judith\nYear: 1625\nCreator: Simon Vouet\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q27316110\nTitle: Zeil- en roeiboten in een riviermonding\nYear: 1640\nCreator: Jan van Goyen\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q27919851\nTitle: The Gallery of Archduke Leopold in Brussels (I)\nYear: 1651\nCreator: David Teniers the Younger\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q27976019\nTitle: A Woman Playing a Lute\nYear: 1663\nCreator: Frans van Mieris the Elder\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q27976019\nTitle: A Woman Playing a Lute\nYear: 1663\nCreator: Frans van Mieris the Elder\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q28379861\nTitle: Portrait of David II Teniers\nYear: 1659\nCreator: Pieter Thijs\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q28795868\nTitle: The Banishment of Hagar\nYear: 1668\nCreator: Claude Lorrain\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q28795872\nTitle: Q28795872\nYear: 1665\nCreator: Francisque Millet\nCopyright: public domain\n\nWikidata link: http://www.wikidata.org/entity/Q28801542\nTitle: Madonna and Child\nYear: 1635\nCreator: Philippe de Champaigne\nCopyright: public domain"
+  }
+]

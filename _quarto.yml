@@ -15,7 +15,7 @@ book:
     - collection003.qmd
     - paintings.ipynb
     - video.ipynb
-  repo-url: https://github.com/NFDI4Culture/catalogue-003
+  repo-url: https://github.com/Marcel-Kro/catalogue-003
   repo-actions: [edit]
   downloads: [pdf]
 
