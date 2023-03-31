@@ -7,7 +7,6 @@
 ]{book}
 
 \usepackage{amsmath,amssymb}
-\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -17,6 +16,10 @@
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -118,10 +121,12 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
 \makeatother
 \makeatletter
 \@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
 \makeatother
 \makeatletter
 \makeatother
@@ -139,12 +144,12 @@
 
 \title{Baroque AI: Publication Prototype}
 \author{Class participants}
-\date{3/17/23}
+\date{2023-03-17}
 
 \begin{document}
 \frontmatter
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, interior hidden, sharp corners, breakable, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, sharp corners, borderline west={3pt}{0pt}{shadecolor}, frame hidden, enhanced, interior hidden, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -165,7 +170,7 @@ instructions}
 
 \begin{figure}
 
-{\centering \includegraphics{./6780765/Cupido.jpg}
+{\centering \includegraphics{6780765/Cupido.jpg}
 
 }
 
@@ -298,7 +303,7 @@ Creator: Simon Vouet
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-2.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-2.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q27316110}
 
@@ -310,7 +315,7 @@ Creator: Jan van Goyen
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-4.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-4.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q27919851}
 
@@ -322,7 +327,7 @@ Creator: David Teniers the Younger
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-6.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-6.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q27976019}
 
@@ -334,7 +339,7 @@ Creator: Frans van Mieris the Elder
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-8.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-8.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q27976019}
 
@@ -346,7 +351,7 @@ Creator: Frans van Mieris the Elder
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-10.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-10.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q28379861}
 
@@ -358,7 +363,7 @@ Creator: Pieter Thijs
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-12.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-12.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q28795868}
 
@@ -370,7 +375,7 @@ Creator: Claude Lorrain
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-14.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-14.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q28795872}
 
@@ -382,7 +387,7 @@ Creator: Francisque Millet
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-16.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-16.png}
 
 Wikidata link: \url{http://www.wikidata.org/entity/Q28801542}
 
@@ -394,7 +399,7 @@ Creator: Philippe de Champaigne
 
 Copyright: public domain
 
-\includegraphics{./paintings_files/figure-pdf/cell-2-output-18.png}
+\includegraphics{paintings_files/figure-pdf/cell-2-output-18.png}
 
 \bookmarksetup{startatroot}
 
@@ -404,6 +409,9 @@ Notebook}\label{activity-embedded-video-in-jupyter-notebook}}
 
 Objective: Running and editing Juypter Notebooks in MyBinder and
 retrieving video and 3D models as embeds.
+
+\hypertarget{video-embedding}{%
+\section{Video embedding}\label{video-embedding}}
 
 The below Python code experiments with retrieving video data via iframe
 embedding.
