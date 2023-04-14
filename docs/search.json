@@ -39,7 +39,7 @@
     "href": "paintings.html",
     "title": "Activity: Paintings catalogue in Jupyter Notebook",
     "section": "",
-    "text": "Objective: Make a selection of nine paintings for the exhibition catalogue to be selected from Wikidata and rendered multi-format in Quarto. https://w.wiki/6Ww7\nThe below Python code uses SPARQLWrapper to retrieve data from Wikidata based on a SPARQL query.\nModuleNotFoundError: No module named 'SPARQLWrapper'"
+    "text": "Objective: Make a selection of nine paintings for the exhibition catalogue to be selected from Wikidata and rendered multi-format in Quarto. https://w.wiki/6Ww7\nThe below Python code uses SPARQLWrapper to retrieve data from Wikidata based on a SPARQL query.\nWikidata link: http://www.wikidata.org/entity/Q17276254\nTitle: Flowers in a Glass Flask\nYear: 1612\nCreator: Jacob de Gheyn II\nCopyright: public domain\nAttributeError: module 'PIL.Image' has no attribute 'Resampling'"
   },
   {
     "objectID": "video.html#video-embedding",
